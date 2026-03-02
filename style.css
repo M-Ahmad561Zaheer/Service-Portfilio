@@ -1,0 +1,112 @@
+:root {
+  --background-color: #0a0a0f;
+  --surface-color: #16161f;
+  --text-color: #f4f4f5;
+  --primary-action: #6366f1;
+  --secondary-action: #22d3ee;
+}
+
+/* Base Setup */
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body { 
+  background-color: var(--background-color); 
+  color: var(--text-color); 
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Syne', sans-serif; }
+.font-body { font-family: 'DM Sans', sans-serif; }
+
+/* Interactive Elements */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-hover {
+  background: rgba(22, 22, 31, 0.4) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+    
+  transform: translateY(-10px);
+  border-color: var(--primary-action) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.15);
+  background: rgba(255, 255, 255, 0.03) !important;
+  box-shadow: 0 0 30px 5px rgba(99, 102, 241, 0.1); /* Subtle primary glow */
+}
+
+/* Form Inputs Focus */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-action) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Modal Blur Effect */
+#contact-modal {
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+/* Unified Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeInUp 0.8s ease-out forwards; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+.floating { animation: float 6s ease-in-out infinite; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+.animate-shake { animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both; }
+
+/* Custom Select Arrow */
+.custom-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+}
+
+/* Webkit Scrollbar (Premium Look) */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--background-color); }
+::-webkit-scrollbar-thumb { 
+  background: var(--surface-color); 
+  border-radius: 10px;
+  border: 2px solid var(--background-color);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--primary-action); }
+
+.lighthouse-pulse {
+  position: relative;
+}
+.lighthouse-pulse::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid #22c55e; /* Green pulse */
+  animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}

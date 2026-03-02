@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Services</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body class="h-full font-body">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color: var(--background-color);">
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl pulse-glow" style="background-color: var(--primary-action); opacity: 0.15;"></div>
+      <div class="absolute bottom-40 right-20 w-96 h-96 rounded-full blur-3xl pulse-glow" style="background-color: var(--secondary-action); opacity: 0.1; animation-delay: -1.5s;"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl" style="background: radial-gradient(circle, var(--primary-action) 0%, transparent 70%); opacity: 0.05;"></div>
+    </div>
+
+    <div class="relative z-10 w-full min-h-full">
+  <section class="w-full px-6 md:px-12 lg:px-20 pt-16 pb-12 md:pt-24 md:pb-20">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div class="absolute top-0 left-[20%] w-[400px] h-[400px] bg-indigo-600/10 blur-[120px] rounded-full"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        
+        <div class="flex-1 text-center lg:text-left">
+          <div class="fade-in stagger-1">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase mb-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); color: var(--secondary-action);">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              </span>
+              Available for New Projects
+            </span>
+          </div>
+          
+          <h1 id="hero-title" class="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 fade-in stagger-2" style="color: var(--text-color);">
+            Design to <span class="gradient-text">Production</span> <br>in Record Time
+          </h1>
+          
+          <p id="hero-subtitle" class="text-lg md:text-xl mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 fade-in stagger-3" style="color: var(--text-color); opacity: 0.7;">
+            Expert conversion of Figma designs into high-performance <b>Next.js 14</b> apps. Clean code, SEO optimized, and motion-rich interfaces.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in stagger-4">
+            <button id="cta-button" class="group relative px-8 py-4 rounded-xl font-bold text-white overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95" style="background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);">
+              <span class="relative z-10 flex items-center gap-2">
+                Start Your Project <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+              </span>
+            </button>
+            <a href="https://az-developers.vercel.app" 
+            target="_blank" 
+            class="group px-8 py-4 rounded-xl font-bold transition-all duration-300 border border-white/10 hover:border-primary-action/50 hover:bg-white/5 flex items-center justify-center gap-2" 
+            style="color: var(--text-color);">
+   
+                <span>View Portfolio</span>
+                
+                <svg class="w-5 h-5 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" 
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-1 relative fade-in stagger-5">
+          <div class="relative w-full max-w-md mx-auto group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            
+            <div class="floating relative rounded-2xl shadow-2xl overflow-hidden border border-white/10" style="background-color: var(--surface-color);">
+              <div class="flex items-center justify-between px-4 py-3 border-b border-white/5" style="background: rgba(0,0,0,0.2);">
+                <div class="flex gap-2">
+                  <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+                  <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+                </div>
+                <span class="text-[10px] font-mono tracking-widest opacity-40 uppercase">Next.js Framework</span>
+              </div>
+              
+              <div class="p-6 font-mono text-sm leading-relaxed">
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">1</span>
+                    <div><span style="color: #c678dd;">import</span> { <span style="color: #e06c75;">Motion</span> } <span style="color: #c678dd;">from</span> <span style="color: #98c379;">"framer-motion"</span></div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">2</span>
+                    <div><span style="color: #c678dd;">export default function</span> <span style="color: #61afef;">Hero</span>() {</div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">3</span>
+                    <div class="pl-4"><span style="color: #c678dd;">return</span> (</div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">4</span>
+                    <div class="pl-8 text-cyan-400">&lt;Motion.div</div>
+                </div>
+                <div class="flex gap-4 animate-pulse">
+                    <span class="opacity-20 select-none text-right w-4">5</span>
+                    <div class="pl-12 text-gray-400">initial={{ opacity: <span style="color: #d19a66;">0</span> }}</div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">6</span>
+                    <div class="pl-8 text-cyan-400">&gt;</div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">7</span>
+                    <div class="pl-12 text-white">✨ Optimized Conversion</div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="opacity-20 select-none text-right w-4">8</span>
+                    <div class="pl-8 text-cyan-400">&lt;/Motion.div&gt;</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -right-6 top-1/4 floating-delay px-4 py-3 rounded-2xl shadow-xl border border-white/10 backdrop-blur-xl bg-white/5 hidden md:block">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                    <div class="text-[10px] uppercase tracking-tighter opacity-50">Lighthouse</div>
+                    <div class="text-sm font-bold text-white">100/100</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</div>
+
+    <section class="w-full px-6 md:px-12 lg:px-20 py-16 md:py-24 relative overflow-hidden">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary-action/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4" style="background: rgba(99, 102, 241, 0.1); color: var(--secondary-action); border: 1px solid rgba(99, 102, 241, 0.2);">My Expertise</span>
+      <h2 id="services-title" class="font-display text-4xl md:text-5xl font-extrabold mb-6" style="color: var(--text-color);">High-End <span class="gradient-text">Digital Solutions</span></h2>
+      <div class="w-24 h-1.5 mx-auto rounded-full" style="background: linear-gradient(90deg, var(--primary-action), var(--secondary-action));"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Figma to React Mastery</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Transforming complex Figma/Adobe XD designs into production-ready <b>Next.js</b> apps with 100% design fidelity and clean architecture.</p>
+      </div>
+
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%); box-shadow: 0 10px 20px -5px rgba(34, 211, 238, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Speed & SEO Optimization</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Achieving 95+ Lighthouse scores. I optimize Web Vitals, implement SSR/SSG, and ensure your site is fast enough to rank #1.</p>
+      </div>
+
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #f472b6 0%, #db2777 100%); box-shadow: 0 10px 20px -5px rgba(219, 39, 119, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Motion & Interactivity</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Bringing static interfaces to life using <b>Framer Motion</b> and GSAP. Smooth scroll, micro-interactions, and immersive storytelling.</p>
+      </div>
+
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Headless CMS Integration</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Connecting your frontend with Sanity, Contentful, or Strapi. Dynamic content management without compromising on speed.</p>
+      </div>
+
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Scalable Web Apps</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Developing full-scale SaaS platforms and dashboards with complex state management using Redux or React Query.</p>
+      </div>
+
+      <div class="card-hover group rounded-3xl p-8 border" style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.05);">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-transform group-hover:scale-110 group-hover:rotate-3" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.4);">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold mb-4" style="color: var(--text-color);">Modern E-commerce</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-color); opacity: 0.6;">Building fast-loading online stores with Shopify Headless or custom Stripe integrations for seamless payments.</p>
+      </div>
+
+    </div>
+  </div>
+<section class="w-full px-6 md:px-12 lg:px-20 py-20 relative">
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-indigo-500/5 blur-[100px] pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+      
+      <div class="p-6 rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-indigo-500/30 transition-all duration-300">
+        <div class="font-display text-4xl md:text-5xl font-extrabold gradient-text mb-2">15+</div>
+        <div class="text-xs md:text-sm uppercase tracking-widest font-bold opacity-50" style="color: var(--text-color);">Projects Delivered</div>
+      </div>
+
+      <div class="p-6 rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-cyan-500/30 transition-all duration-300">
+        <div class="font-display text-4xl md:text-5xl font-extrabold gradient-text mb-2">99%</div>
+        <div class="text-xs md:text-sm uppercase tracking-widest font-bold opacity-50" style="color: var(--text-color);">Success Rate</div>
+      </div>
+
+      <div class="p-6 rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-purple-500/30 transition-all duration-300">
+        <div class="font-display text-4xl md:text-5xl font-extrabold gradient-text mb-2">5⭐</div>
+        <div class="text-xs md:text-sm uppercase tracking-widest font-bold opacity-50" style="color: var(--text-color);">Client Reviews</div>
+      </div>
+
+      <div class="p-6 rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:border-pink-500/30 transition-all duration-300">
+        <div class="font-display text-4xl md:text-5xl font-extrabold gradient-text mb-2">12h</div>
+        <div class="text-xs md:text-sm uppercase tracking-widest font-bold opacity-50" style="color: var(--text-color);">Response Time</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <footer class="w-full px-6 md:px-12 lg:px-20 py-12 border-t" style="border-color: rgba(255,255,255,0.05); background: rgba(0,0,0,0.2);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+      <div class="flex flex-col items-center md:items-start">
+        <div class="font-display font-black text-2xl mb-2" style="color: var(--text-color);">
+          <span class="gradient-text italic">AZ</span> DEVELOPER'S
+        </div>
+        <p class="text-sm opacity-50 text-center md:text-left" style="color: var(--text-color);">Crafting high-performance digital experiences.</p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="https://www.linkedin.com/in/ahmad561/" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:bg-white/5 hover:border-primary-action transition-all duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/M-Ahmad561Zaheer" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:bg-white/5 hover:border-primary-action transition-all duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/5 text-xs tracking-widest uppercase font-bold opacity-30" style="color: var(--text-color);">
+      <div>© 2026 AZ Developer's Portfolio</div>
+      <div class="mt-2 md:mt-0">Designed for Performance & Scale</div>
+    </div>
+  </div>
+</footer>
+    </div>
+  </div>
+
+  <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 pointer-events-none opacity-0" style="background-color: rgba(0,0,0,0.8);">
+    <div id="modal-content" class="w-full max-w-2xl rounded-2xl p-8 md:p-10 transform transition-all duration-300 scale-95 translate-y-4" style="background-color: var(--surface-color); border: 1px solid rgba(255,255,255,0.1);">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <h2 class="font-display text-3xl font-bold mb-2" style="color: var(--text-color);">Let's Build Something Amazing</h2>
+          <p style="color: var(--text-color); opacity: 0.7;">Share your project details and I'll get back to you within 24 hours</p>
+        </div>
+        <button id="close-modal" class="w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-110" style="background-color: rgba(255,255,255,0.05);">
+          <svg class="w-6 h-6" style="color: var(--text-color);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+      <form id="contact-form" class="space-y-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="name" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Your Name *</label>
+      <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);" placeholder="John Doe">
+    </div>
+    <div>
+      <label for="email" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Email Address *</label>
+      <input type="email" id="email" required class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);" placeholder="john@example.com">
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label for="project-type" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Project Type *</label>
+      <select id="project-type" required class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);">
+        <option value="" class="bg-[#16161f]">Select a service...</option>
+        <option value="html-css" class="bg-[#16161f]">HTML & CSS Conversion</option>
+        <option value="react" style="background-color: var(--surface-color); color: var(--text-color);">React.js Development</option>
+        <option value="ecommerce" class="bg-[#16161f]">E-commerce Solution</option>
+        <option value="performance" class="bg-[#16161f]">Speed Optimization</option>
+        <option value="seo" class="bg-[#16161f]">SEO & Technical Audit</option>
+        <option value="bug-fix" class="bg-[#16161f]">Custom Bug Fixing</option>
+        <option value="full-website" class="bg-[#16161f]">Full Custom Website Build</option>
+      </select>
+    </div>
+    <div>
+      <label for="timeline" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Expected Timeline *</label>
+      <select id="timeline" required class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);">
+        <option value="" class="bg-[#16161f]">When do you need it?</option>
+        <option value="urgent" class="bg-[#16161f]">Urgent (24-48 Hours)</option>
+        <option value="1-week" class="bg-[#16161f]">Within 1 Week</option>
+        <option value="2-4-weeks" class="bg-[#16161f]">2 to 4 Weeks</option>
+        <option value="long-term" class="bg-[#16161f]">Long-term Collaboration</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+  <label for="budget" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Budget Range</label>
+  <select id="budget" class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2 custom-select" 
+    style="background-color: var(--surface-color); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);">
+    
+    <option value="" style="background-color: #16161f; color: #f4f4f5;">Select budget range...</option>
+    <option value="500-1000" style="background-color: #16161f; color: #f4f4f5;">$500 - $1,000</option>
+    <option value="1000-2500" style="background-color: #16161f; color: #f4f4f5;">$1,000 - $2,500</option>
+    <option value="2500-5000" style="background-color: #16161f; color: #f4f4f5;">$2,500 - $5,000</option>
+    <option value="5000+" style="background-color: #16161f; color: #f4f4f5;">$5,000+</option>
+  </select>
+</div>
+    <div>
+      <label for="whatsapp" class="block text-sm font-medium mb-2" style="color: var(--text-color);">WhatsApp Number (Optional)</label>
+      <input type="tel" id="whatsapp" class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);" placeholder="+1 234 567 890">
+    </div>
+  </div>
+
+
+  <div>
+    <label for="message" class="block text-sm font-medium mb-2" style="color: var(--text-color);">Project Details *</label>
+    <textarea id="message" required rows="4" class="w-full px-4 py-3 rounded-lg border transition-all duration-200 focus:outline-none focus:ring-2 resize-none" style="background-color: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: var(--text-color); --tw-ring-color: var(--primary-action);" placeholder="Tell me about your project..."></textarea>
+ <div class="text-right text-xs mt-1" style="color: var(--text-color); opacity: 0.5;">
+    <span id="char-count">0</span>/500 characters
+</div> 
+</div>
+
+  <div class="flex flex-col sm:flex-row gap-4 pt-4">
+    <button type="submit" id="submit-btn" class="flex-1 px-8 py-4 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25" style="background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);"> 
+      Send Project Request 
+    </button> 
+    <button type="button" id="cancel-btn" class="px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 border-2" style="border-color: rgba(255,255,255,0.1); color: var(--text-color); background-color: transparent;"> 
+      Cancel 
+    </button>
+  </div>
+</form>
+      <div id="success-message" class="hidden">
+        <div class="text-center py-8">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);"><svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg></div>
+          <h3 class="font-display text-2xl font-bold mb-3" style="color: var(--text-color);">Message Sent Successfully!</h3>
+          <p class="mb-6" style="color: var(--text-color); opacity: 0.7;">Thank you for reaching out. I'll review your project details and get back to you within 24 hours.</p>
+          <button id="close-success" class="px-8 py-3 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, var(--primary-action) 0%, var(--secondary-action) 100%);"> Close </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
